@@ -1,0 +1,52 @@
+/*
+ *  CMSIS Pack Debug Access Sequence Log
+ *  File        : G:\PCB文件汇总\POV_LED_Project\Software\MCU_Program_Proj_for_32\MCU_Program_Proj_for_32_v0.0.1\USER\LED_Sequences_0002.log
+ *  Created     : 21:02:55 (13/08/2018)
+ *  Device      : STM32F103C8
+ *  PDSC File   : H:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Keil.STM32F1xx_DFP.pdsc
+ *  Config File : G:\PCB文件汇总\POV_LED_Project\Software\MCU_Program_Proj_for_32\MCU_Program_Proj_for_32_v0.0.1\USER\DebugConfig\Target_1_STM32F103C8_1.0.0.dbgconf
+ *
+ */
+
+[21:02:55.635]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[21:02:55.635]  
+[21:02:55.635]  <debugvars>
+[21:02:55.636]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[21:02:55.636]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[21:02:55.636]    __dp=0x00000000
+[21:02:55.637]    __ap=0x00000000
+[21:02:55.730]    __traceout=0x00000000   (Trace Disabled)
+[21:02:55.731]    __errorcontrol=0x00000000   (Skip Errors="False")
+[21:02:55.731]    DbgMCU_CR=0x00000007
+[21:02:55.732]  </debugvars>
+[21:02:55.732]  
+[21:02:55.732]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[21:02:55.733]    <block atomic="false" info="">
+[21:02:55.733]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[21:02:55.739]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[21:02:55.740]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[21:02:55.746]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[21:02:55.747]    </block>
+[21:02:55.747]  </sequence>
+[21:02:55.747]  
+[21:03:00.907]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[21:03:00.907]  
+[21:03:00.909]  <debugvars>
+[21:03:00.909]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[21:03:00.909]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[21:03:00.909]    __dp=0x00000000
+[21:03:00.910]    __ap=0x00000000
+[21:03:00.910]    __traceout=0x00000000   (Trace Disabled)
+[21:03:00.910]    __errorcontrol=0x00000000   (Skip Errors="False")
+[21:03:00.910]    DbgMCU_CR=0x00000007
+[21:03:00.911]  </debugvars>
+[21:03:00.911]  
+[21:03:00.911]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[21:03:00.912]    <block atomic="false" info="">
+[21:03:00.912]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[21:03:00.918]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[21:03:00.932]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[21:03:00.938]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[21:03:00.939]    </block>
+[21:03:00.939]  </sequence>
+[21:03:00.939]  

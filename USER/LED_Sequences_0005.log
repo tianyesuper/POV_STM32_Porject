@@ -1,0 +1,829 @@
+/*
+ *  CMSIS Pack Debug Access Sequence Log
+ *  File        : H:\POV_LED_Project\Software\MCU_Program_Proj_for_32\MCU_Program_Proj_for_32_v0.0.1\USER\LED_Sequences_0005.log
+ *  Created     : 20:10:18 (14/08/2018)
+ *  Device      : STM32F103C8
+ *  PDSC File   : F:\keilV5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Keil.STM32F1xx_DFP.pdsc
+ *  Config File : H:\POV_LED_Project\Software\MCU_Program_Proj_for_32\MCU_Program_Proj_for_32_v0.0.1\USER\DebugConfig\Target_1_STM32F103C8_1.0.0.dbgconf
+ *
+ */
+
+[20:10:18.449]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:10:18.449]  
+[20:10:18.474]  <debugvars>
+[20:10:18.499]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:10:18.524]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:10:18.526]    __dp=0x00000000
+[20:10:18.527]    __ap=0x00000000
+[20:10:18.528]    __traceout=0x00000000   (Trace Disabled)
+[20:10:18.529]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:10:18.530]    DbgMCU_CR=0x00000007
+[20:10:18.530]  </debugvars>
+[20:10:18.531]  
+[20:10:18.532]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:10:18.533]    <block atomic="false" info="">
+[20:10:18.534]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:10:18.542]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:10:18.543]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:10:18.550]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:10:18.551]    </block>
+[20:10:18.552]  </sequence>
+[20:10:18.553]  
+[20:10:28.905]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:10:28.905]  
+[20:10:28.907]  <debugvars>
+[20:10:28.908]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:10:28.908]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[20:10:28.909]    __dp=0x00000000
+[20:10:28.910]    __ap=0x00000000
+[20:10:28.911]    __traceout=0x00000000   (Trace Disabled)
+[20:10:28.912]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:10:28.912]    DbgMCU_CR=0x00000007
+[20:10:28.914]  </debugvars>
+[20:10:28.915]  
+[20:10:28.915]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:10:28.916]    <block atomic="false" info="">
+[20:10:28.917]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:10:28.924]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:10:28.925]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:10:28.932]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:10:28.934]    </block>
+[20:10:28.935]  </sequence>
+[20:10:28.936]  
+[20:15:42.637]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:15:42.637]  
+[20:15:42.639]  <debugvars>
+[20:15:42.640]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:15:42.641]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:15:42.646]    __dp=0x00000000
+[20:15:42.646]    __ap=0x00000000
+[20:15:42.647]    __traceout=0x00000000   (Trace Disabled)
+[20:15:42.648]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:15:42.649]    DbgMCU_CR=0x00000007
+[20:15:42.650]  </debugvars>
+[20:15:42.650]  
+[20:15:42.651]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:15:42.652]    <block atomic="false" info="">
+[20:15:42.653]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:15:42.660]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:15:42.660]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:15:42.668]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:15:42.668]    </block>
+[20:15:42.669]  </sequence>
+[20:15:42.670]  
+[20:15:50.130]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:15:50.130]  
+[20:15:50.131]  <debugvars>
+[20:15:50.132]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:15:50.133]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[20:15:50.134]    __dp=0x00000000
+[20:15:50.134]    __ap=0x00000000
+[20:15:50.135]    __traceout=0x00000000   (Trace Disabled)
+[20:15:50.137]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:15:50.137]    DbgMCU_CR=0x00000007
+[20:15:50.138]  </debugvars>
+[20:15:50.139]  
+[20:15:50.140]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:15:50.140]    <block atomic="false" info="">
+[20:15:50.141]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:15:50.148]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:15:50.149]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:15:50.156]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:15:50.158]    </block>
+[20:15:50.159]  </sequence>
+[20:15:50.160]  
+[20:17:42.443]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:17:42.443]  
+[20:17:42.444]  <debugvars>
+[20:17:42.445]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:17:42.446]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:17:42.447]    __dp=0x00000000
+[20:17:42.448]    __ap=0x00000000
+[20:17:42.449]    __traceout=0x00000000   (Trace Disabled)
+[20:17:42.450]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:17:42.451]    DbgMCU_CR=0x00000007
+[20:17:42.451]  </debugvars>
+[20:17:42.452]  
+[20:17:42.453]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:17:42.454]    <block atomic="false" info="">
+[20:17:42.456]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:17:42.463]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:17:42.464]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:17:42.471]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:17:42.472]    </block>
+[20:17:42.473]  </sequence>
+[20:17:42.474]  
+[20:17:49.068]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:17:49.068]  
+[20:17:49.068]  <debugvars>
+[20:17:49.069]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:17:49.070]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[20:17:49.071]    __dp=0x00000000
+[20:17:49.071]    __ap=0x00000000
+[20:17:49.072]    __traceout=0x00000000   (Trace Disabled)
+[20:17:49.072]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:17:49.073]    DbgMCU_CR=0x00000007
+[20:17:49.073]  </debugvars>
+[20:17:49.074]  
+[20:17:49.074]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:17:49.075]    <block atomic="false" info="">
+[20:17:49.076]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:17:49.082]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:17:49.083]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:17:49.089]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:17:49.089]    </block>
+[20:17:49.090]  </sequence>
+[20:17:49.091]  
+[20:19:35.281]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:19:35.281]  
+[20:19:35.282]  <debugvars>
+[20:19:35.283]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:19:35.283]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:19:35.283]    __dp=0x00000000
+[20:19:35.284]    __ap=0x00000000
+[20:19:35.284]    __traceout=0x00000000   (Trace Disabled)
+[20:19:35.285]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:19:35.285]    DbgMCU_CR=0x00000007
+[20:19:35.286]  </debugvars>
+[20:19:35.286]  
+[20:19:35.286]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:19:35.287]    <block atomic="false" info="">
+[20:19:35.287]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:19:35.293]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:19:35.293]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:19:35.300]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:19:35.301]    </block>
+[20:19:35.301]  </sequence>
+[20:19:35.301]  
+[20:20:19.059]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:20:19.059]  
+[20:20:19.062]  <debugvars>
+[20:20:19.063]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:20:19.064]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:20:19.065]    __dp=0x00000000
+[20:20:19.065]    __ap=0x00000000
+[20:20:19.066]    __traceout=0x00000000   (Trace Disabled)
+[20:20:19.067]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:20:19.068]    DbgMCU_CR=0x00000007
+[20:20:19.069]  </debugvars>
+[20:20:19.070]  
+[20:20:19.071]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:20:19.072]    <block atomic="false" info="">
+[20:20:19.073]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:20:19.080]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:20:19.081]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:20:19.088]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:20:19.089]    </block>
+[20:20:19.090]  </sequence>
+[20:20:19.091]  
+[20:20:43.513]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:20:43.513]  
+[20:20:43.514]  <debugvars>
+[20:20:43.515]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:20:43.516]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:20:43.517]    __dp=0x00000000
+[20:20:43.518]    __ap=0x00000000
+[20:20:43.519]    __traceout=0x00000000   (Trace Disabled)
+[20:20:43.520]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:20:43.521]    DbgMCU_CR=0x00000007
+[20:20:43.522]  </debugvars>
+[20:20:43.523]  
+[20:20:43.524]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:20:43.525]    <block atomic="false" info="">
+[20:20:43.526]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:20:43.533]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:20:43.533]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:20:43.541]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:20:43.542]    </block>
+[20:20:43.543]  </sequence>
+[20:20:43.544]  
+[20:21:00.959]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:21:00.959]  
+[20:21:00.961]  <debugvars>
+[20:21:00.964]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:21:00.965]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:21:00.968]    __dp=0x00000000
+[20:21:00.969]    __ap=0x00000000
+[20:21:00.971]    __traceout=0x00000000   (Trace Disabled)
+[20:21:00.972]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:21:00.973]    DbgMCU_CR=0x00000007
+[20:21:00.974]  </debugvars>
+[20:21:00.975]  
+[20:21:00.975]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:21:00.976]    <block atomic="false" info="">
+[20:21:00.977]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:21:00.984]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:21:00.985]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:21:00.991]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:21:00.992]    </block>
+[20:21:00.993]  </sequence>
+[20:21:00.994]  
+[20:22:41.092]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:22:41.092]  
+[20:22:41.093]  <debugvars>
+[20:22:41.094]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:22:41.095]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:22:41.096]    __dp=0x00000000
+[20:22:41.097]    __ap=0x00000000
+[20:22:41.098]    __traceout=0x00000000   (Trace Disabled)
+[20:22:41.099]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:22:41.100]    DbgMCU_CR=0x00000007
+[20:22:41.101]  </debugvars>
+[20:22:41.102]  
+[20:22:41.102]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:22:41.104]    <block atomic="false" info="">
+[20:22:41.104]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:22:41.112]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:22:41.113]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:22:41.120]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:22:41.121]    </block>
+[20:22:41.122]  </sequence>
+[20:22:41.123]  
+[20:23:47.338]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:23:47.338]  
+[20:23:47.339]  <debugvars>
+[20:23:47.340]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:23:47.341]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:23:47.342]    __dp=0x00000000
+[20:23:47.343]    __ap=0x00000000
+[20:23:47.344]    __traceout=0x00000000   (Trace Disabled)
+[20:23:47.345]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:23:47.346]    DbgMCU_CR=0x00000007
+[20:23:47.347]  </debugvars>
+[20:23:47.347]  
+[20:23:47.348]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:23:47.349]    <block atomic="false" info="">
+[20:23:47.350]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:23:47.357]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:23:47.357]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:23:47.364]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:23:47.365]    </block>
+[20:23:47.366]  </sequence>
+[20:23:47.367]  
+[20:24:04.112]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:24:04.112]  
+[20:24:04.113]  <debugvars>
+[20:24:04.114]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:24:04.115]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:24:04.116]    __dp=0x00000000
+[20:24:04.117]    __ap=0x00000000
+[20:24:04.118]    __traceout=0x00000000   (Trace Disabled)
+[20:24:04.119]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:24:04.120]    DbgMCU_CR=0x00000007
+[20:24:04.120]  </debugvars>
+[20:24:04.121]  
+[20:24:04.122]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:24:04.123]    <block atomic="false" info="">
+[20:24:04.124]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:24:04.131]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:24:04.132]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:24:04.139]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:24:04.140]    </block>
+[20:24:04.140]  </sequence>
+[20:24:04.141]  
+[20:24:20.991]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:24:20.991]  
+[20:24:20.992]  <debugvars>
+[20:24:20.993]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:24:20.993]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:24:20.995]    __dp=0x00000000
+[20:24:21.013]    __ap=0x00000000
+[20:24:21.014]    __traceout=0x00000000   (Trace Disabled)
+[20:24:21.014]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:24:21.015]    DbgMCU_CR=0x00000007
+[20:24:21.015]  </debugvars>
+[20:24:21.015]  
+[20:24:21.016]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:24:21.016]    <block atomic="false" info="">
+[20:24:21.017]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:24:21.023]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:24:21.024]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:24:21.030]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:24:21.031]    </block>
+[20:24:21.031]  </sequence>
+[20:24:21.032]  
+[20:24:42.522]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:24:42.522]  
+[20:24:42.526]  <debugvars>
+[20:24:42.526]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:24:42.527]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:24:42.531]    __dp=0x00000000
+[20:24:42.532]    __ap=0x00000000
+[20:24:42.532]    __traceout=0x00000000   (Trace Disabled)
+[20:24:42.533]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:24:42.533]    DbgMCU_CR=0x00000007
+[20:24:42.534]  </debugvars>
+[20:24:42.535]  
+[20:24:42.535]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:24:42.536]    <block atomic="false" info="">
+[20:24:42.536]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:24:42.542]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:24:42.543]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:24:42.549]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:24:42.550]    </block>
+[20:24:42.551]  </sequence>
+[20:24:42.552]  
+[20:31:14.963]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:31:14.963]  
+[20:31:14.964]  <debugvars>
+[20:31:14.965]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:31:14.965]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:31:14.967]    __dp=0x00000000
+[20:31:14.971]    __ap=0x00000000
+[20:31:14.972]    __traceout=0x00000000   (Trace Disabled)
+[20:31:14.973]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:31:14.974]    DbgMCU_CR=0x00000007
+[20:31:14.975]  </debugvars>
+[20:31:14.976]  
+[20:31:14.977]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:31:14.978]    <block atomic="false" info="">
+[20:31:14.978]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:31:14.986]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:31:14.987]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:31:14.994]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:31:14.995]    </block>
+[20:31:14.996]  </sequence>
+[20:31:14.997]  
+[20:35:35.801]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:35:35.801]  
+[20:35:35.801]  <debugvars>
+[20:35:35.802]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:35:35.802]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:35:35.803]    __dp=0x00000000
+[20:35:35.803]    __ap=0x00000000
+[20:35:35.804]    __traceout=0x00000000   (Trace Disabled)
+[20:35:35.804]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:35:35.805]    DbgMCU_CR=0x00000007
+[20:35:35.805]  </debugvars>
+[20:35:35.806]  
+[20:35:35.806]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:35:35.807]    <block atomic="false" info="">
+[20:35:35.807]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:35:35.813]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:35:35.814]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:35:35.820]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:35:35.821]    </block>
+[20:35:35.821]  </sequence>
+[20:35:35.822]  
+[20:36:11.092]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:36:11.092]  
+[20:36:11.092]  <debugvars>
+[20:36:11.093]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:36:11.093]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:36:11.094]    __dp=0x00000000
+[20:36:11.095]    __ap=0x00000000
+[20:36:11.096]    __traceout=0x00000000   (Trace Disabled)
+[20:36:11.096]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:36:11.100]    DbgMCU_CR=0x00000007
+[20:36:11.101]  </debugvars>
+[20:36:11.101]  
+[20:36:11.102]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:36:11.102]    <block atomic="false" info="">
+[20:36:11.103]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:36:11.110]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:36:11.110]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:36:11.117]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:36:11.117]    </block>
+[20:36:11.118]  </sequence>
+[20:36:11.118]  
+[20:37:10.241]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:37:10.241]  
+[20:37:10.242]  <debugvars>
+[20:37:10.243]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:37:10.244]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:37:10.245]    __dp=0x00000000
+[20:37:10.245]    __ap=0x00000000
+[20:37:10.249]    __traceout=0x00000000   (Trace Disabled)
+[20:37:10.250]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:37:10.251]    DbgMCU_CR=0x00000007
+[20:37:10.251]  </debugvars>
+[20:37:10.252]  
+[20:37:10.253]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:37:10.253]    <block atomic="false" info="">
+[20:37:10.254]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:37:10.260]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:37:10.261]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:37:10.267]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:37:10.268]    </block>
+[20:37:10.268]  </sequence>
+[20:37:10.269]  
+[20:37:23.088]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:37:23.088]  
+[20:37:23.089]  <debugvars>
+[20:37:23.090]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:37:23.092]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[20:37:23.093]    __dp=0x00000000
+[20:37:23.098]    __ap=0x00000000
+[20:37:23.099]    __traceout=0x00000000   (Trace Disabled)
+[20:37:23.099]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:37:23.100]    DbgMCU_CR=0x00000007
+[20:37:23.101]  </debugvars>
+[20:37:23.102]  
+[20:37:23.103]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:37:23.104]    <block atomic="false" info="">
+[20:37:23.105]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:37:23.111]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:37:23.112]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:37:23.119]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:37:23.120]    </block>
+[20:37:23.122]  </sequence>
+[20:37:23.122]  
+[20:38:12.522]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:38:12.522]  
+[20:38:12.526]  <debugvars>
+[20:38:12.527]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:38:12.532]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:38:12.533]    __dp=0x00000000
+[20:38:12.534]    __ap=0x00000000
+[20:38:12.535]    __traceout=0x00000000   (Trace Disabled)
+[20:38:12.536]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:38:12.537]    DbgMCU_CR=0x00000007
+[20:38:12.538]  </debugvars>
+[20:38:12.538]  
+[20:38:12.539]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:38:12.540]    <block atomic="false" info="">
+[20:38:12.541]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:38:12.548]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:38:12.548]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:38:12.555]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:38:12.555]    </block>
+[20:38:12.556]  </sequence>
+[20:38:12.557]  
+[20:38:17.541]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:38:17.541]  
+[20:38:17.542]  <debugvars>
+[20:38:17.543]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:38:17.544]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[20:38:17.545]    __dp=0x00000000
+[20:38:17.546]    __ap=0x00000000
+[20:38:17.550]    __traceout=0x00000000   (Trace Disabled)
+[20:38:17.551]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:38:17.551]    DbgMCU_CR=0x00000007
+[20:38:17.552]  </debugvars>
+[20:38:17.553]  
+[20:38:17.554]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:38:17.554]    <block atomic="false" info="">
+[20:38:17.555]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:38:17.561]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:38:17.562]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:38:17.569]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:38:17.570]    </block>
+[20:38:17.571]  </sequence>
+[20:38:17.572]  
+[20:41:25.874]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:41:25.874]  
+[20:41:25.875]  <debugvars>
+[20:41:25.876]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:41:25.878]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:41:25.882]    __dp=0x00000000
+[20:41:25.883]    __ap=0x00000000
+[20:41:25.884]    __traceout=0x00000000   (Trace Disabled)
+[20:41:25.885]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:41:25.886]    DbgMCU_CR=0x00000007
+[20:41:25.887]  </debugvars>
+[20:41:25.888]  
+[20:41:25.889]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:41:25.890]    <block atomic="false" info="">
+[20:41:25.890]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:41:25.898]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:41:25.899]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:41:25.906]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:41:25.906]    </block>
+[20:41:25.907]  </sequence>
+[20:41:25.908]  
+[20:41:51.672]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:41:51.672]  
+[20:41:51.673]  <debugvars>
+[20:41:51.674]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:41:51.674]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:41:51.676]    __dp=0x00000000
+[20:41:51.676]    __ap=0x00000000
+[20:41:51.681]    __traceout=0x00000000   (Trace Disabled)
+[20:41:51.681]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:41:51.682]    DbgMCU_CR=0x00000007
+[20:41:51.683]  </debugvars>
+[20:41:51.684]  
+[20:41:51.684]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:41:51.685]    <block atomic="false" info="">
+[20:41:51.693]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:41:51.700]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:41:51.701]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:41:51.708]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:41:51.709]    </block>
+[20:41:51.710]  </sequence>
+[20:41:51.710]  
+[20:45:46.279]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:45:46.279]  
+[20:45:46.279]  <debugvars>
+[20:45:46.279]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:45:46.280]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[20:45:46.281]    __dp=0x00000000
+[20:45:46.283]    __ap=0x00000000
+[20:45:46.283]    __traceout=0x00000000   (Trace Disabled)
+[20:45:46.288]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:45:46.288]    DbgMCU_CR=0x00000007
+[20:45:46.288]  </debugvars>
+[20:45:46.288]  
+[20:45:46.289]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:45:46.289]    <block atomic="false" info="">
+[20:45:46.290]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:45:46.297]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:45:46.297]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:45:46.304]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:45:46.305]    </block>
+[20:45:46.305]  </sequence>
+[20:45:46.306]  
+[20:45:56.419]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[20:45:56.419]  
+[20:45:56.420]  <debugvars>
+[20:45:56.420]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[20:45:56.421]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[20:45:56.422]    __dp=0x00000000
+[20:45:56.422]    __ap=0x00000000
+[20:45:56.423]    __traceout=0x00000000   (Trace Disabled)
+[20:45:56.424]    __errorcontrol=0x00000000   (Skip Errors="False")
+[20:45:56.425]    DbgMCU_CR=0x00000007
+[20:45:56.425]  </debugvars>
+[20:45:56.426]  
+[20:45:56.427]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[20:45:56.427]    <block atomic="false" info="">
+[20:45:56.428]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[20:45:56.435]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[20:45:56.435]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[20:45:56.442]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[20:45:56.462]    </block>
+[20:45:56.463]  </sequence>
+[20:45:56.464]  
+[21:37:24.141]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[21:37:24.141]  
+[21:37:24.143]  <debugvars>
+[21:37:24.144]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[21:37:24.145]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[21:37:24.146]    __dp=0x00000000
+[21:37:24.150]    __ap=0x00000000
+[21:37:24.151]    __traceout=0x00000000   (Trace Disabled)
+[21:37:24.152]    __errorcontrol=0x00000000   (Skip Errors="False")
+[21:37:24.153]    DbgMCU_CR=0x00000007
+[21:37:24.154]  </debugvars>
+[21:37:24.155]  
+[21:37:24.156]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[21:37:24.157]    <block atomic="false" info="">
+[21:37:24.158]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[21:37:24.165]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[21:37:24.167]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[21:37:24.174]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[21:37:24.175]    </block>
+[21:37:24.176]  </sequence>
+[21:37:24.176]  
+[21:37:31.185]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[21:37:31.186]  
+[21:37:31.186]  <debugvars>
+[21:37:31.187]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[21:37:31.187]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[21:37:31.189]    __dp=0x00000000
+[21:37:31.189]    __ap=0x00000000
+[21:37:31.195]    __traceout=0x00000000   (Trace Disabled)
+[21:37:31.195]    __errorcontrol=0x00000000   (Skip Errors="False")
+[21:37:31.196]    DbgMCU_CR=0x00000007
+[21:37:31.197]  </debugvars>
+[21:37:31.197]  
+[21:37:31.198]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[21:37:31.199]    <block atomic="false" info="">
+[21:37:31.200]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[21:37:31.206]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[21:37:31.207]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[21:37:31.214]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[21:37:31.215]    </block>
+[21:37:31.216]  </sequence>
+[21:37:31.217]  
+[21:57:55.576]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[21:57:55.576]  
+[21:57:55.577]  <debugvars>
+[21:57:55.578]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[21:57:55.578]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[21:57:55.579]    __dp=0x00000000
+[21:57:55.580]    __ap=0x00000000
+[21:57:55.580]    __traceout=0x00000000   (Trace Disabled)
+[21:57:55.581]    __errorcontrol=0x00000000   (Skip Errors="False")
+[21:57:55.581]    DbgMCU_CR=0x00000007
+[21:57:55.581]  </debugvars>
+[21:57:55.582]  
+[21:57:55.582]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[21:57:55.583]    <block atomic="false" info="">
+[21:57:55.583]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[21:57:55.589]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[21:57:55.590]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[21:57:55.596]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[21:57:55.597]    </block>
+[21:57:55.597]  </sequence>
+[21:57:55.598]  
+[21:58:06.062]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[21:58:06.062]  
+[21:58:06.062]  <debugvars>
+[21:58:06.063]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[21:58:06.063]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[21:58:06.064]    __dp=0x00000000
+[21:58:06.064]    __ap=0x00000000
+[21:58:06.065]    __traceout=0x00000000   (Trace Disabled)
+[21:58:06.066]    __errorcontrol=0x00000000   (Skip Errors="False")
+[21:58:06.070]    DbgMCU_CR=0x00000007
+[21:58:06.070]  </debugvars>
+[21:58:06.071]  
+[21:58:06.071]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[21:58:06.072]    <block atomic="false" info="">
+[21:58:06.073]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[21:58:06.079]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[21:58:06.079]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[21:58:06.086]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[21:58:06.086]    </block>
+[21:58:06.087]  </sequence>
+[21:58:06.087]  
+[22:07:44.386]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[22:07:44.386]  
+[22:07:44.387]  <debugvars>
+[22:07:44.388]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[22:07:44.388]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[22:07:44.389]    __dp=0x00000000
+[22:07:44.389]    __ap=0x00000000
+[22:07:44.390]    __traceout=0x00000000   (Trace Disabled)
+[22:07:44.390]    __errorcontrol=0x00000000   (Skip Errors="False")
+[22:07:44.391]    DbgMCU_CR=0x00000007
+[22:07:44.391]  </debugvars>
+[22:07:44.392]  
+[22:07:44.392]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[22:07:44.393]    <block atomic="false" info="">
+[22:07:44.393]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[22:07:44.399]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[22:07:44.400]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[22:07:44.406]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[22:07:44.407]    </block>
+[22:07:44.407]  </sequence>
+[22:07:44.408]  
+[22:07:49.282]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[22:07:49.282]  
+[22:07:49.282]  <debugvars>
+[22:07:49.283]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[22:07:49.283]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[22:07:49.284]    __dp=0x00000000
+[22:07:49.285]    __ap=0x00000000
+[22:07:49.285]    __traceout=0x00000000   (Trace Disabled)
+[22:07:49.286]    __errorcontrol=0x00000000   (Skip Errors="False")
+[22:07:49.290]    DbgMCU_CR=0x00000007
+[22:07:49.291]  </debugvars>
+[22:07:49.291]  
+[22:07:49.292]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[22:07:49.292]    <block atomic="false" info="">
+[22:07:49.293]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[22:07:49.300]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[22:07:49.300]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[22:07:49.307]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[22:07:49.307]    </block>
+[22:07:49.308]  </sequence>
+[22:07:49.308]  
+[22:20:49.816]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[22:20:49.816]  
+[22:20:49.817]  <debugvars>
+[22:20:49.817]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[22:20:49.817]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[22:20:49.818]    __dp=0x00000000
+[22:20:49.818]    __ap=0x00000000
+[22:20:49.819]    __traceout=0x00000000   (Trace Disabled)
+[22:20:49.820]    __errorcontrol=0x00000000   (Skip Errors="False")
+[22:20:49.820]    DbgMCU_CR=0x00000007
+[22:20:49.824]  </debugvars>
+[22:20:49.825]  
+[22:20:49.825]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[22:20:49.826]    <block atomic="false" info="">
+[22:20:49.826]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[22:20:49.832]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[22:20:49.833]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[22:20:49.839]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[22:20:49.840]    </block>
+[22:20:49.840]  </sequence>
+[22:20:49.841]  
+[22:20:54.730]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[22:20:54.730]  
+[22:20:54.730]  <debugvars>
+[22:20:54.731]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[22:20:54.731]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[22:20:54.731]    __dp=0x00000000
+[22:20:54.732]    __ap=0x00000000
+[22:20:54.732]    __traceout=0x00000000   (Trace Disabled)
+[22:20:54.733]    __errorcontrol=0x00000000   (Skip Errors="False")
+[22:20:54.734]    DbgMCU_CR=0x00000007
+[22:20:54.734]  </debugvars>
+[22:20:54.738]  
+[22:20:54.751]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[22:20:54.751]    <block atomic="false" info="">
+[22:20:54.751]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[22:20:54.758]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[22:20:54.758]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[22:20:54.765]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[22:20:54.765]    </block>
+[22:20:54.766]  </sequence>
+[22:20:54.766]  
+[22:27:47.511]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[22:27:47.511]  
+[22:27:47.512]  <debugvars>
+[22:27:47.512]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[22:27:47.513]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[22:27:47.513]    __dp=0x00000000
+[22:27:47.515]    __ap=0x00000000
+[22:27:47.515]    __traceout=0x00000000   (Trace Disabled)
+[22:27:47.516]    __errorcontrol=0x00000000   (Skip Errors="False")
+[22:27:47.521]    DbgMCU_CR=0x00000007
+[22:27:47.521]  </debugvars>
+[22:27:47.522]  
+[22:27:47.522]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[22:27:47.523]    <block atomic="false" info="">
+[22:27:47.523]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[22:27:47.529]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[22:27:47.530]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[22:27:47.536]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[22:27:47.552]    </block>
+[22:27:47.553]  </sequence>
+[22:27:47.553]  
+[23:04:43.456]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[23:04:43.456]  
+[23:04:43.457]  <debugvars>
+[23:04:43.458]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[23:04:43.458]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[23:04:43.459]    __dp=0x00000000
+[23:04:43.460]    __ap=0x00000000
+[23:04:43.461]    __traceout=0x00000000   (Trace Disabled)
+[23:04:43.462]    __errorcontrol=0x00000000   (Skip Errors="False")
+[23:04:43.463]    DbgMCU_CR=0x00000007
+[23:04:43.464]  </debugvars>
+[23:04:43.464]  
+[23:04:43.465]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[23:04:43.465]    <block atomic="false" info="">
+[23:04:43.466]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[23:04:43.472]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[23:04:43.473]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[23:04:43.479]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[23:04:43.480]    </block>
+[23:04:43.481]  </sequence>
+[23:04:43.481]  
+[23:04:49.729]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[23:04:49.729]  
+[23:04:49.730]  <debugvars>
+[23:04:49.731]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[23:04:49.732]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[23:04:49.733]    __dp=0x00000000
+[23:04:49.738]    __ap=0x00000000
+[23:04:49.739]    __traceout=0x00000000   (Trace Disabled)
+[23:04:49.740]    __errorcontrol=0x00000000   (Skip Errors="False")
+[23:04:49.741]    DbgMCU_CR=0x00000007
+[23:04:49.742]  </debugvars>
+[23:04:49.743]  
+[23:04:49.744]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[23:04:49.744]    <block atomic="false" info="">
+[23:04:49.745]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[23:04:49.752]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[23:04:49.753]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[23:04:49.760]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[23:04:49.761]    </block>
+[23:04:49.762]  </sequence>
+[23:04:49.763]  
+[23:08:44.408]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[23:08:44.408]  
+[23:08:44.408]  <debugvars>
+[23:08:44.409]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[23:08:44.410]    __connection=0x00020002   (Connection Type="Flash", Reset Type="Reset Error")
+[23:08:44.411]    __dp=0x00000000
+[23:08:44.411]    __ap=0x00000000
+[23:08:44.412]    __traceout=0x00000000   (Trace Disabled)
+[23:08:44.413]    __errorcontrol=0x00000000   (Skip Errors="False")
+[23:08:44.413]    DbgMCU_CR=0x00000007
+[23:08:44.414]  </debugvars>
+[23:08:44.415]  
+[23:08:44.415]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[23:08:44.416]    <block atomic="false" info="">
+[23:08:44.417]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[23:08:44.423]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[23:08:44.423]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[23:08:44.430]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[23:08:44.430]    </block>
+[23:08:44.431]  </sequence>
+[23:08:44.431]  
+[23:08:49.532]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[23:08:49.532]  
+[23:08:49.533]  <debugvars>
+[23:08:49.538]    __protocol=0x00010002   (Protocol="SWD", SWJ-DP="True")
+[23:08:49.539]    __connection=0x00020001   (Connection Type="Debug", Reset Type="Reset Error")
+[23:08:49.540]    __dp=0x00000000
+[23:08:49.541]    __ap=0x00000000
+[23:08:49.541]    __traceout=0x00000000   (Trace Disabled)
+[23:08:49.542]    __errorcontrol=0x00000000   (Skip Errors="False")
+[23:08:49.543]    DbgMCU_CR=0x00000007
+[23:08:49.544]  </debugvars>
+[23:08:49.545]  
+[23:08:49.546]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[23:08:49.546]    <block atomic="false" info="">
+[23:08:49.547]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[23:08:49.554]        // -> [Write32(0xE000EDF0, 0xA05F0001)] (__dp=0, __ap=0)
+[23:08:49.555]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[23:08:49.562]        // -> [Write32(0xE0042004, 0x00000007)] (__dp=0, __ap=0)
+[23:08:49.563]    </block>
+[23:08:49.564]  </sequence>
+[23:08:49.565]  
