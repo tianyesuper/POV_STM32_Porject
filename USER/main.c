@@ -6,7 +6,7 @@ extern u16 display_times;
 
 int main(void)
  {
-    u8 ifp=0,test=0;
+    u8 ifp=0;
     u16 display_times_buff=10;
 	   Hardware_Init();	    
       __enable_irq();      
