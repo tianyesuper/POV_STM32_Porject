@@ -72,10 +72,10 @@ u8 LED_pwm_off(DeviceAddress_Typedef chip_addr,uint8_t start_channel,uint8_t cha
 u8 LED_pwm_on(DeviceAddress_Typedef chip_addr,uint8_t start_channel,uint8_t channel_num);
 #else
 
-#define CLK PBin(2)	 //时钟输出脚
-#define SDI PBin(10)	 //数据输出脚
-#define LD  PBin(1)	 //串行数据导入脚
-#define OEN PBin(0)	 //输出使能脚
+#define CLK PBout(2)	 //时钟输出脚
+#define SDI PBout(10)	 //数据输出脚
+#define LD  PBout(1)	 //串行数据导入脚
+#define OEN PBout(0)	 //输出使能脚
 
 
 void LED_Init(void);//初始化
