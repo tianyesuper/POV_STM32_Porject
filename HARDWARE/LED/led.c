@@ -203,20 +203,28 @@ void LED_Output ( u8 output_flag,	u16 *p_data)
 {
 	u8 i;
 	u16 outbuff;
+    LD =0;
+    OEN =1;
 	outbuff=*p_data;
 	for(i=0;i<16;i++)
 	  {
 		  CLK =0;
-			SDI=outbuff&0x0001;
+		  SDI=outbuff&0x0001;
 		  outbuff=outbuff>>1;
-		  CLK =1;	
+          delay_us(1);
+		  CLK =1;
+          delay_us(1);
 	  }
+        CLK =0;
 		if(output_flag==ENABLE)
 		{
-	    LD =1;
-	   OEN =0;	
+	      LD =1;
+          delay_us(1);
+          LD =0;
+          delay_us(1);
+	      OEN =0;	
 		}
-		 CLK =0;
+		
 }
 /*void LED_Shutdown(void)
 {
