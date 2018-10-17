@@ -189,15 +189,15 @@ void LED_Init(void)
  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB,ENABLE);  //使能GPIO外设和AFIO复用功能模块时钟使能
 	                                                //用于TIM3的CH2输出的PWM通过该LED显示
 					
-   //设置该引脚为复用输出功能,输出TIM4 CH3的PWM脉冲波形
+                                                    //设置该引脚为复用输出功能,输出TIM4 CH3的PWM脉冲波形
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0|GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_10; //TIM_CH3
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;  //复用推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOB, &GPIO_InitStructure);
 	 OEN =1;
 	 LD =0;
-   CLK =0;
-   SDI=0; 
+     CLK =0;
+     SDI=0; 
 }
 void LED_Output ( u8 output_flag,	u16 *p_data)
 {
