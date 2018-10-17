@@ -191,7 +191,7 @@ void LED_Init(void)
 					
                                                     //设置该引脚为复用输出功能,输出TIM4 CH3的PWM脉冲波形
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0|GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_10; //TIM_CH3
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;  //复用推挽输出
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;  //复用推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOB, &GPIO_InitStructure);
 	 OEN =1;
@@ -210,18 +210,14 @@ void LED_Output ( u8 output_flag,	u16 *p_data)
 	  {
 		  CLK =0;
 		  SDI=outbuff&0x0001;
-		  outbuff=outbuff>>1;
-          delay_us(1);
-		  CLK =1;
-          delay_us(1);
+		  outbuff=outbuff>>1;      
+		  CLK =1;        
 	  }
         CLK =0;
 		if(output_flag==ENABLE)
 		{
-	      LD =1;
-          delay_us(1);
-          LD =0;
-          delay_us(1);
+	      LD =1;        
+          LD =0;   
 	      OEN =0;	
 		}
 		

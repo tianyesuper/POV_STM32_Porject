@@ -7,7 +7,7 @@ extern u16 display_times;
 int main(void)
  {
     u8 ifp=0;
-    u16 display_times_buff=10;
+    u16 display_times_buff=10,display_daa;
 	   Hardware_Init();	    
       __enable_irq();      
       Beep_State(ENABLE);
@@ -23,9 +23,12 @@ int main(void)
 //		;
 //	} 
 //	
-	 
+	    display_daa=0xff00;
+        LED_Output ( ENABLE,  &display_daa);
+
 		while(1)
 	    {
+            
 		   if(display_times==0)
 		   {
 		       Timer_Update();
