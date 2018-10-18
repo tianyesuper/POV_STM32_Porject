@@ -6,7 +6,8 @@
 //arr：自动重装值。
 //psc：时钟预分频数
 //这里使用的是定时器3!
-u16 display_times=0;
+u32 Freq;
+u16 display_times=10;
 u16 IC2ReadValue=0;
 u8 update=0;
 void Timer_init(void)
@@ -19,7 +20,7 @@ void Timer_init(void)
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE); //时钟使能
     TIM_DeInit(TIM2);
 
-	TIM_TimeBaseStructure.TIM_Period = 100; //设置在下一个更新事件装入活动的自动重装载寄存器周期的值	 计数到5000为500ms
+	TIM_TimeBaseStructure.TIM_Period = 5000; //设置在下一个更新事件装入活动的自动重装载寄存器周期的值	 计数到5000为500ms
 	TIM_TimeBaseStructure.TIM_Prescaler =(7200-1); //设置用来作为TIMx时钟频率除数的预分频值  10Khz的计数频率  
 	TIM_TimeBaseStructure.TIM_ClockDivision = 0; //设置时钟分割:TDTS = Tck_tim
 	TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;  //TIM向下计数模式
@@ -42,8 +43,8 @@ void Timer_init(void)
 /**********************************************************************************************************************/
 	/* 允许TIM3的时钟 */
 	  RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
-	 // RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB|RCC_APB2Periph_AFIO,ENABLE);
-	 // GPIO_PinRemapConfig(GPIO_PartialRemap_TIM3,ENABLE);
+	  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB|RCC_APB2Periph_AFIO,ENABLE);
+	  GPIO_PinRemapConfig(GPIO_PartialRemap_TIM3,ENABLE);
       
 	  /* 将定时器3寄存器设为初始值 */
 	   TIM_DeInit(TIM3);
@@ -77,7 +78,9 @@ void Timer_Update(u16 Update_counter       )
 	TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
 	
 	TIM_Cmd(TIM2, DISABLE);  //使能TIMx外设  
+	if()
 	TIM_TimeBaseStructure.TIM_Period = Update_counter; //设置在下一个更新事件装入活动的自动重装载寄存器周期的值	 计数到5000为500ms
+	else
 	TIM_TimeBaseStructure.TIM_Prescaler =1; //设置用来作为TIMx时钟频率除数的预分频值  10Khz的计数频率  
 	TIM_TimeBaseStructure.TIM_ClockDivision = 0; //设置时钟分割:TDTS = Tck_tim
 	TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;  //TIM向上计数模式
@@ -88,12 +91,12 @@ void Timer_Update(u16 Update_counter       )
 u16 Is_Timer_Update(u16 update_data)
 {
     static u16   IC2ReadValue1=0, IC2ReadValue2=0;
-	  u16 circle_counter=0;
      update=0;
        
             /* Get the Input Capture value */
             IC2ReadValue2 = update_data;
-           
+
+            
            
             if(((IC2ReadValue2-IC2ReadValue1)>ERROR_TIME)||((IC2ReadValue2-IC2ReadValue1)>ERROR_TIME))
              {
@@ -118,8 +121,14 @@ void TIM2_IRQHandler(void)   //TIM2中断
 	if (TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET) //检查指定的TIM中断发生与否:TIM 中断源 
 		{
 		
-			display_times++;				
-		  TIM_ClearITPendingBit(TIM2, TIM_IT_Update  );  //清除TIMx的中断待处理位:TIM 中断源 
+			display_times++;
+				if(display_times==360)
+				{
+				   display_times=0;
+				   //Timer_Update_flag=SET;
+				   TIM2->ARR=circle_counter/360/RESOLUTION ;
+				}
+		 TIM_ClearITPendingBit(TIM2, TIM_IT_Update  );  //清除TIMx的中断待处理位:TIM 中断源 
 		           //添加显示标志位
 		}
 }

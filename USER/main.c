@@ -2,7 +2,7 @@
 #include "FreeRTOS.h"                   // ARM.FreeRTOS::RTOS:Core
 #include "task.h"
 
-extern u16 display_times;
+
 
 int main(void)
  {
@@ -18,14 +18,11 @@ int main(void)
 //	vTaskStartScheduler();
 
 //	//if there is no statck space to create idle task ,it will enter here
-//	while (1)
-//	{
-//		;
-//	} 
+
 //	
 	    display_daa=0xff00;
-        LED_Output ( ENABLE,  &display_daa);
-
+        display_line(display_daa,display_daa,display_daa,display_daa);
+        display_clear();
 		while(1)
 	    {
             

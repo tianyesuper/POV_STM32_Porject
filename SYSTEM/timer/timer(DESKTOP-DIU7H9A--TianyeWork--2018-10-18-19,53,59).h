@@ -16,7 +16,7 @@ typedef struct
 
 
 void Timer_init(void);
-void Timer_Update(u16 Update_counter);
+void Timer_Update(void);
 u16 Is_Timer_Update(u16 update_data);
 
 

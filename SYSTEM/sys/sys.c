@@ -57,7 +57,7 @@ void Hardware_Init(void)
 	   NVIC_Configuration(); 	 //设置NVIC中断分组2:2位抢占优先级，2位响应优先级
 	   GPIO_Configuration();
 	   Beep_Configuration();
-     delay_init(72);	    	 //延时函数初始化	  
+       delay_init(72);	    	 //延时函数初始化	  
 	   uart_init(115200);
 	   IIC_Configuration();
 	   LED_Init();			     //LED端口初始化
