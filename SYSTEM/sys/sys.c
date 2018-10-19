@@ -38,7 +38,7 @@ void GPIO_Configuration(void)
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_Init(GPIOB, &GPIO_InitStructure);
 
-    POWER =1;
+    LED_POWER =ENABLE;
 	
 	
 	

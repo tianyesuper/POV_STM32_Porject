@@ -29,6 +29,10 @@ int main(void)
 		 
  	      // DS1302_ReadTime(&Time_Structure);
  	       ifp= Remote_Process();   //红外接收到数据处理
+				if(ifp)
+				{
+					display_clear();
+				}
         
 	   	}
  }

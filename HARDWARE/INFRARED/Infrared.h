@@ -7,12 +7,12 @@
 //LED驱动代码			 
 //2012/2/27
 
-//LED端口定义
-  
+
 #define RDATA PAin(1)	 //红外数据输入脚
 //红外遥控识别码(ID),每款遥控器的该值基本都不一样,但也有一样的.
 //我们选用的遥控器识别码为0
-#define REMOTE_ID  0       
+#define REMOTE_ID  0    
+
 
 extern u8 Remote_Cnt;    //按键次数,此次按下键的次数
 extern u8 Remote_Rdy;    //红外接收到数据 

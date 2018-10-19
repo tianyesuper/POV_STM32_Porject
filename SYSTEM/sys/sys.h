@@ -66,7 +66,7 @@
 #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  // ‰»Î
 
 #define LED_RESET      PBout(2)// PB2
-#define POWER          PAout(0)// PB0
+#define LED_POWER      PAout(0)// PB0
 #define DSRST          PBout(14)// PB0
 #define SCLK           PBout(12)// PB0
 #define BEEP           PBout(8)// PB0

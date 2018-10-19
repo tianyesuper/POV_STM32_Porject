@@ -2,6 +2,7 @@
 
 u8 display_mode(void)
 {
+    
    static u8 mode_state=READY;
     switch(mode_state)
     {

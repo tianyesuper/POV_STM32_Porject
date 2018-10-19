@@ -12,6 +12,9 @@
 //Copyright(C) 正点原子 2009-2019
 //All rights reserved
 ////////////////////////////////////////////////////////////////////////////////// 	  
+
+
+
  	  		  
 u32 Remote_Odr=0;  	 //命令暂存处
 u8  Remote_Cnt=0;    //按键次数,此次按下键的次数
@@ -71,31 +74,34 @@ void EXTI1_IRQHandler(void)
         }			 						 
     } 	 	    
 	EXTI_ClearITPendingBit(EXTI_Line1);  //清除EXTI1线路挂起位         
-}  
-//处理红外键盘
-//返回相应的键值
-u8 Remote_Process(void)
-{               
-    u8 t1,t2;   
-    t1=Remote_Odr>>24; //得到地址码
-    t2=(Remote_Odr>>16)&0xff;//得到地址反码 
-    Remote_Rdy=0;//清除标记 		      
-    if(t1==(u8)~t2&&t1==REMOTE_ID)//检验遥控识别码(ID)及地址 
-    { 
-        t1=Remote_Odr>>8;
-        t2=Remote_Odr; 	
-        if(t1==(u8)~t2)
-				{
-					Remote_Odr=0;
-					return t1; //处理键值 
-				}
-			
-    }     
-    return 0;
-}
+} 
 
 
 
+    //处理红外键盘
+    //返回相应的键值
+    u8 Remote_Process(void)
+    {               
+        u8 t1,t2;   
+        t1=Remote_Odr>>24; //得到地址码
+        t2=(Remote_Odr>>16)&0xff;//得到地址反码 
+        Remote_Rdy=0;//清除标记 		      
+ 
+        if(t1==(u8)~t2&&t1==REMOTE_ID)//检验遥控识别码(ID)及地址 
+        { 
+            t1=Remote_Odr>>8;
+            t2=Remote_Odr; 	
+            if(t1==(u8)~t2)
+    				{
+    					Remote_Odr=0;
+    					return t1; //处理键值 
+    				}
+    		
+        } 
+        return 0;
+        
+			}
+   
 
 
 
