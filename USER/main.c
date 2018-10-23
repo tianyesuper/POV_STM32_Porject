@@ -10,7 +10,7 @@ int main(void)
     u16 display_times_buff=10,display_daa;
 	   Hardware_Init();	    
       __enable_irq();      
-      Beep_State(ENABLE);
+      Beep_State(DISABLE);
 
 //	Tasks_Init();
 
@@ -25,15 +25,16 @@ int main(void)
         display_clear();
 		while(1)
 	    {
-            
+	        
+            display_ctrl();
 		 
  	      // DS1302_ReadTime(&Time_Structure);
- 	       ifp= Remote_Process();   //红外接收到数据处理
+ 	      ifp= Remote_Process();   //红外接收到数据处理
 				if(ifp)
 				{
 					display_clear();
 				}
-        
+       
 	   	}
  }
 

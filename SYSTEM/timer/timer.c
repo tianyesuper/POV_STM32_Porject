@@ -25,7 +25,7 @@ void Timer_init(void)
 	TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;  //TIM向下计数模式
 	TIM_TimeBaseInit(TIM2, &TIM_TimeBaseStructure); //根据TIM_TimeBaseInitStruct中指定的参数初始化TIMx的时间基数单位
     TIM_ARRPreloadConfig(TIM2, ENABLE); //允许ARR预装载缓冲器
-    
+     TIM2->CR1 |= TIM_CR1_OPM;
 	TIM_ITConfig(  //使能或者失能指定的TIM中断
 		TIM2, //TIM2
 		TIM_IT_Update  |  //TIM 中断源
@@ -54,7 +54,7 @@ void Timer_init(void)
 		  TIM_ICInitStructure.TIM_ICPolarity  = TIM_ICPolarity_Rising;
 		  TIM_ICInitStructure.TIM_ICSelection = TIM_ICSelection_DirectTI;
 		  TIM_ICInitStructure.TIM_ICPrescaler = TIM3_ICPSC_DIV  ;
-		  TIM_ICInitStructure.TIM_ICFilter	  = 0x0;
+		  TIM_ICInitStructure.TIM_ICFilter	  = 0x3;
 	  
 		  TIM_ICInit(TIM3, &TIM_ICInitStructure);
 		   /* Enable the TIM3 global Interrupt */
@@ -67,22 +67,17 @@ void Timer_init(void)
 		  TIM_Cmd(TIM3, ENABLE);
 	  
 		  /* Enable the CC4 Interrupt Request */
-		  TIM_ITConfig(TIM3, TIM_IT_CC2, ENABLE);
+		  TIM_ITConfig(TIM3, TIM_IT_CC2, ENABLE); ///
 	
 }
 
 void Timer_Update(u16 Update_counter       )
 {
 
-	TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
 	
-	
-	TIM_TimeBaseStructure.TIM_Period = Update_counter; //设置在下一个更新事件装入活动的自动重装载寄存器周期的值	 计数到5000为500ms
-	TIM_TimeBaseStructure.TIM_Prescaler =TIM2_ICPSC_DIV ; //设置用来作为TIMx时钟频率除数的预分频值  10Khz的计数频率  
-	TIM_TimeBaseStructure.TIM_ClockDivision = 0; //设置时钟分割:TDTS = Tck_tim
-	TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;  //TIM向上计数模式
-	TIM_TimeBaseInit(TIM2, &TIM_TimeBaseStructure);
+	TIM2->ARR=Update_counter;
 	TIM_Cmd(TIM2, ENABLE);  //使能TIMx外设
+	TIM_Cmd(TIM3, ENABLE);
 
 }
 u16 Is_Timer_Update(u16 update_data)
@@ -92,11 +87,15 @@ u16 Is_Timer_Update(u16 update_data)
     
        
             /* Get the Input Capture value */
-            IC2ReadValue2 = update_data;
+	if(update_data>6000)
+	{    
+		      IC2ReadValue2 = update_data;
            
            
             if(((IC2ReadValue2-IC2ReadValue1)>ERROR_TIME)||((IC2ReadValue1-IC2ReadValue2)>ERROR_TIME))
              {
+							  TIM_Cmd(TIM2, DISABLE);  //使能TIMx外设  
+							  TIM_Cmd(TIM3, DISABLE);
                  if (TIM3_ICPSC_DIV)
                      {
                      circle_counter=IC2ReadValue2/TIM3_ICPSC_DIV/360;
@@ -104,7 +103,7 @@ u16 Is_Timer_Update(u16 update_data)
                      else
                      {
                          circle_counter=IC2ReadValue2/360;
-                     ]
+                     }
                 
             }
             else 
@@ -113,6 +112,11 @@ u16 Is_Timer_Update(u16 update_data)
             }
             
             IC2ReadValue1=IC2ReadValue2;
+					}
+	else
+	{
+		  circle_counter=0; 
+	}
         return circle_counter;
 
 
@@ -123,21 +127,33 @@ void TIM2_IRQHandler(void)   //TIM2中断,刻度计时器
 {	
 	if (TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET) //检查指定的TIM中断发生与否:TIM 中断源 
 		{
-			display_step++;               
+			
+			display_step++; 
+			 if(display_step>360)
+		 {
+			 display_step=0;
+		 }	
+      		 
 		  TIM_ClearITPendingBit(TIM2, TIM_IT_Update  );  //清除TIMx的中断待处理位:TIM 中断源 
+		 TIM_Cmd(TIM2, ENABLE);  //使能TIMx外设
 		    //添加显示标志位
 		}
 }
 
 void TIM3_IRQHandler(void)
 { 
-    update=1;
-
+	
     if(TIM_GetITStatus(TIM3, TIM_IT_CC2) == SET) 
     {
+			update=1;
+			TIM_Cmd(TIM3, DISABLE);
         /* Clear TIM2 Capture compare interrupt pending bit */
-        TIM_ClearITPendingBit(TIM3, TIM_IT_CC2);
-        IC2ReadValue= TIM_GetCapture2(TIM3);
+        
+      IC2ReadValue= TIM_GetCapture2(TIM3);
+				TIM3->CNT=0;
+			TIM_ClearITPendingBit(TIM3, TIM_IT_CC2);
+			TIM_Cmd(TIM3, ENABLE);
+			
     }
 }
 

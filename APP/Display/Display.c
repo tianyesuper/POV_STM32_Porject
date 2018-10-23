@@ -28,7 +28,7 @@ void display_ctrl(void)
             data=Is_Timer_Update(IC2ReadValue);					  
           if(data)
           {
-            TIM_Cmd(TIM2, DISABLE);  //使能TIMx外设  
+           
             Timer_Update(data);
           }
 		   display_step=0;
@@ -36,13 +36,13 @@ void display_ctrl(void)
         }
    else
    {
-      //  display_step
-    
-
-
-
-
-
+		
+	  if (data!=display_step)
+		  {
+		  data=display_step;
+		  display_line(data,data,data,data);
+		  }
+       
    }         
       /*     if(display_times==0)
              {
