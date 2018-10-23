@@ -5,6 +5,7 @@
 #include "led.h"
 #include "timer.h"
 
+#define DISAPLAY_CLEAR_DATA    (u16)0x0000
 
 
 void display_line(u16 display_data0,u16 display_data1,u16 display_data2,u16 display_data3);

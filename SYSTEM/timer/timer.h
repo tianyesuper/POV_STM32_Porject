@@ -3,7 +3,8 @@
 #include "stm32f10x.h"
 
 
-#define RESOLUTION    1 //分辨率
+#define TIM2_ICPSC_DIV    0 //分辨率
+#define TIM3_ICPSC_DIV    0 //分辨率
 #define ERROR_TIME    6 //错误时间
 
 typedef struct
