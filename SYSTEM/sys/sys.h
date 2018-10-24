@@ -72,11 +72,6 @@
 #define BEEP           PBout(8)// PB0
 
 
-typedef enum
-{
-   TRUE=1, FALSE=!TRUE,
-   } bool ;
-
 
 void NVIC_Configuration(void);
 void GPIO_Configuration(void);
