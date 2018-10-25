@@ -70,6 +70,8 @@
 #define DSRST          PBout(14)// PB0
 #define SCLK           PBout(12)// PB0
 #define BEEP           PBout(8)// PB0
+#define IWDG_FEED      IWDG_ReloadCounter()    /*reloadŒπ∂¿¡¢ø¥√≈π∑*/ 
+
 
 
 typedef enum
