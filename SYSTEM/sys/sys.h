@@ -70,11 +70,16 @@
 #define DSRST          PBout(14)// PB0
 #define SCLK           PBout(12)// PB0
 #define BEEP           PBout(8)// PB0
+#define IWDG_FEED      IWDG_ReloadCounter()    /*reloadŒπ∂¿¡¢ø¥√≈π∑*/ 
 
 
 
 void NVIC_Configuration(void);
 void GPIO_Configuration(void);
+void IWDG_Configuration(void);
+
+
+
 void Hardware_Init(void);
 //void Param_Init(void);
 void Tasks_Init(void);

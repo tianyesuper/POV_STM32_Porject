@@ -43,6 +43,7 @@ void display_ctrl(void)
           }
 		   display_step=0;
            update=0;
+           IWDG_FEED;
         }
    else
    {
