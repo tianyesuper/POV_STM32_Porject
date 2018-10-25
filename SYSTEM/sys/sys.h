@@ -74,10 +74,6 @@
 
 
 
-typedef enum
-{
-   TRUE=1, FALSE=!TRUE,
-   } bool ;
 
 
 void NVIC_Configuration(void);

@@ -76,6 +76,8 @@ void Timer_Update(u16 Update_counter       )
 
 	
 	TIM2->ARR=Update_counter;
+	TIM_ClearITPendingBit(TIM3, TIM_IT_CC2);
+	TIM_ClearITPendingBit(TIM2, TIM_IT_Update  );  //清除TIMx的中断待处理位:TIM 中断源 
 	TIM_Cmd(TIM2, ENABLE);  //使能TIMx外设
 	TIM_Cmd(TIM3, ENABLE);
 
